@@ -25,18 +25,7 @@ COPY requirements.txt ./
 
 # Install dependencies.
 RUN pip3 install -r requirements.txt
-RUN pip3 install --upgrade pip
-RUN pip3 install discord.py[voice]
-RUN pip3 install python-dotenv
-RUN pip3 install structlog
-RUN pip3 install python-dotenv
-RUN pip3 install ffmpeg
-RUN sudo apt-get -y install ffmpeg
-RUN pip3 install pip install pynacl
-RUN pip3 install PyNaCl
-RUN pip3 install PyNaCl library
-RUN pip3 install numpy
-RUN pip3 install pydub
+
 
 # Copy local code to the container image.
 COPY . ./
