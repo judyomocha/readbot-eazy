@@ -27,7 +27,6 @@ from invoke import task
 
 venv = "source ./venv/bin/activate"
 GOOGLE_CLOUD_PROJECT = os.environ.get("GOOGLE_CLOUD_PROJECT")
-TOKEN = os.environ.get("TOKEN")
 
 @task
 def require_project(c):  # noqa: ANN001, ANN201
