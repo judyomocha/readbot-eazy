@@ -38,6 +38,7 @@ load_dotenv()
 TOKEN = os.environ['TOKEN']
 
 
+
 @app.route("/")
 def hello() -> str:
     # Use basic logging with custom fields
