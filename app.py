@@ -36,6 +36,7 @@ from utils.logging import logger
 app = Flask(__name__)
 load_dotenv()
 TOKEN = os.environ['TOKEN']
+GOOGLE_CLOUD_PROJECT = os.environ['GOOGLE_CLOUD_PROJECT']
 
 intents: Intents = discord.Intents.all()
 client = discord.Client(intents=intents)
