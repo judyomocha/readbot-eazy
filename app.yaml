@@ -21,6 +21,10 @@ on:
 env:
       - "TMPDIR=/builder/home/.pack"
   TOKEN: ${{ secrets.TOKEN }}
+  GOOGLE_CLOUD_PROJECT: ${{ secrets.GOOGLE_CLOUD_PROJECT }}
+  GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+  GCP_SA_EMAIL: ${{ secrets.GCP_SA_EMAIL }}
+  
 
 jobs:
   delivery:
